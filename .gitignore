@@ -4,3 +4,7 @@ app/build/
 .gradle/
 build.log
 app/build/
+.gradle/
+error.log
+build.log
+app/build/
