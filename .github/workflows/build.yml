@@ -25,15 +25,23 @@ jobs:
 
       - name: Install Android SDK
         run: |
-          sdkmanager "platform-tools"
-          sdkmanager "platforms;android-35"
-          sdkmanager "build-tools;35.0.0"
+          yes | sdkmanager --licenses || true
+          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Gradle diagnostics
+      - name: Check project
         run: |
-          chmod +x gradlew
-          ./gradlew :app:tasks --stacktrace
+          echo "=== Project ==="
+          ls -la
+          echo "=== Manifest ==="
+          ls -l app/src/main/AndroidManifest.xml
 
       - name: Build APK
         run: |
-          ./gradlew :app:assembleDebug --stacktrace --info
+          chmod +x gradlew
+          ./gradlew :app:assembleDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Trendzyhubx-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
