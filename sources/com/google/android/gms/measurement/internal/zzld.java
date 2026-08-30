@@ -1,0 +1,10 @@
+package com.google.android.gms.measurement.internal;
+
+import java.util.List;
+import java.util.Map;
+
+/* JADX INFO: compiled from: r8-map-id-e80f248db6611fe3d3090b90a358712397ddee60c8b63ccc605018033ad715b6 */
+/* JADX INFO: loaded from: classes.dex */
+interface zzld {
+    void zza(String str, int i6, Throwable th, byte[] bArr, Map<String, List<String>> map);
+}

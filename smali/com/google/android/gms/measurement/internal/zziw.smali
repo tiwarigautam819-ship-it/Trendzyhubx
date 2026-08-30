@@ -1,0 +1,118 @@
+###### Class com.google.android.gms.measurement.internal.zziw (com.google.android.gms.measurement.internal.zziw)
+.class final Lcom/google/android/gms/measurement/internal/zziw;
+.super Ljava/lang/Object;
+.source "r8-map-id-e80f248db6611fe3d3090b90a358712397ddee60c8b63ccc605018033ad715b6"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "[B>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final synthetic zza:Lcom/google/android/gms/measurement/internal/zzbf;
+
+.field private final synthetic zzb:Ljava/lang/String;
+
+.field private final synthetic zzc:Lcom/google/android/gms/measurement/internal/zzic;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/measurement/internal/zzic;Lcom/google/android/gms/measurement/internal/zzbf;Ljava/lang/String;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p2, p0, Lcom/google/android/gms/measurement/internal/zziw;->zza:Lcom/google/android/gms/measurement/internal/zzbf;
+
+    .line 2
+    .line 3
+    iput-object p3, p0, Lcom/google/android/gms/measurement/internal/zziw;->zzb:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zziw;->zzc:Lcom/google/android/gms/measurement/internal/zzic;
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic call()Ljava/lang/Object;
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zziw;->zzc:Lcom/google/android/gms/measurement/internal/zzic;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/android/gms/measurement/internal/zzic;->zza(Lcom/google/android/gms/measurement/internal/zzic;)Lcom/google/android/gms/measurement/internal/zznv;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Lcom/google/android/gms/measurement/internal/zznv;->zzr()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zziw;->zzc:Lcom/google/android/gms/measurement/internal/zzic;
+
+    .line 11
+    .line 12
+    invoke-static {v0}, Lcom/google/android/gms/measurement/internal/zzic;->zza(Lcom/google/android/gms/measurement/internal/zzic;)Lcom/google/android/gms/measurement/internal/zznv;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    invoke-virtual {v0}, Lcom/google/android/gms/measurement/internal/zznv;->zzm()Lcom/google/android/gms/measurement/internal/zzli;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    iget-object v1, p0, Lcom/google/android/gms/measurement/internal/zziw;->zza:Lcom/google/android/gms/measurement/internal/zzbf;
+
+    .line 21
+    .line 22
+    iget-object v2, p0, Lcom/google/android/gms/measurement/internal/zziw;->zzb:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/measurement/internal/zzli;->zza(Lcom/google/android/gms/measurement/internal/zzbf;Ljava/lang/String;)[B
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    return-object v0
+.end method

@@ -1,0 +1,41 @@
+package p7;
+
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+
+/* JADX INFO: compiled from: r8-map-id-e80f248db6611fe3d3090b90a358712397ddee60c8b63ccc605018033ad715b6 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class b extends o {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final AtomicReferenceFieldUpdater f4669a = AtomicReferenceFieldUpdater.newUpdater(b.class, Object.class, "_consensus");
+    private volatile Object _consensus = a.f4664a;
+
+    @Override // p7.o
+    public final Object a(Object obj) {
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f4669a;
+        Object obj2 = atomicReferenceFieldUpdater.get(this);
+        n6.d dVar = a.f4664a;
+        if (obj2 == dVar) {
+            n6.d dVarC = c(obj);
+            obj2 = atomicReferenceFieldUpdater.get(this);
+            if (obj2 == dVar) {
+                while (true) {
+                    if (atomicReferenceFieldUpdater.compareAndSet(this, dVar, dVarC)) {
+                        obj2 = dVarC;
+                        break;
+                    }
+                    if (atomicReferenceFieldUpdater.get(this) != dVar) {
+                        obj2 = atomicReferenceFieldUpdater.get(this);
+                        break;
+                    }
+                }
+            }
+        }
+        b(obj, obj2);
+        return obj2;
+    }
+
+    public abstract void b(Object obj, Object obj2);
+
+    public abstract n6.d c(Object obj);
+}

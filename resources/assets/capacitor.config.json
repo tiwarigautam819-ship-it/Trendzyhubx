@@ -1,0 +1,6 @@
+{
+	"appId": "com.YaarWin.app",
+	"appName": "YaarWin",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

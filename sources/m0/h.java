@@ -1,0 +1,24 @@
+package m0;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.view.View;
+
+/* JADX INFO: compiled from: r8-map-id-e80f248db6611fe3d3090b90a358712397ddee60c8b63ccc605018033ad715b6 */
+/* JADX INFO: loaded from: classes.dex */
+public final class h extends View.BaseSavedState {
+    public static final Parcelable.Creator<h> CREATOR = new a.c(28);
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public int f4203a;
+
+    public final String toString() {
+        return "HorizontalScrollView.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " scrollPosition=" + this.f4203a + "}";
+    }
+
+    @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i6) {
+        super.writeToParcel(parcel, i6);
+        parcel.writeInt(this.f4203a);
+    }
+}
