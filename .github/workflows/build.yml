@@ -1,3 +1,7 @@
+d Android APK
+
+on:
+  workflow
 name: Build Android APK
 
 on:
@@ -27,13 +31,6 @@ jobs:
         run: |
           yes | sdkmanager --licenses || true
           sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
-
-      - name: Check project
-        run: |
-          echo "=== Project ==="
-          ls -la
-          echo "=== Manifest ==="
-          ls -l app/src/main/AndroidManifest.xml
 
       - name: Build APK
         run: |
