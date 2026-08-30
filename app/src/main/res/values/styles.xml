@@ -397,8 +397,6 @@
         <item name="dialogCornerRadius">@dimen/abc_dialog_corner_radius_material</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
-        <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
-        <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
@@ -542,8 +540,6 @@
         <item name="dialogCornerRadius">@dimen/abc_dialog_corner_radius_material</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
-        <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
-        <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
