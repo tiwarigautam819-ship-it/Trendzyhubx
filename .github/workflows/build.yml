@@ -1,7 +1,3 @@
-d Android APK
-
-on:
-  workflow
 name: Build Android APK
 
 on:
